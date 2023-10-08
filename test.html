@@ -1,21 +1,23 @@
-<div>
-  <h1 id="rotate">VirtualTV LiveStream Test</h1>
-</div>
+<h1 id="rotate">VirtualTV</h1>
 
 <style>
-  div {
+  h1 {
+    text-align: center;
     background-color: #ddd;
-    transition: all 1s ease;
-    animation: rotate 2s forwards alternate linear
+    animation: rotation 2s forwards alternate linear
   }
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg)
+  body {
+    width : 100%;
+    height : 100%;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
     }
-    
-    100% {
-      transform: rotate(360deg)
+    to {
+      transform: rotate(359deg);
     }
   }
 </style>
